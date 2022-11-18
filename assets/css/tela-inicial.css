@@ -1,37 +1,40 @@
 @import url("./components/botao.css");
 
 @media screen and (min-width: 0){
-  .container{
+  .container .tela-inicial{
     margin: 0 29px;  
   }
-  .menu-opcao{
+  .tela-inicial .menu-opcao{
     margin-top: 209px;
+    flex-direction: column;
   }
-  .button-azul{
+  .opcao-jogar{
     height: 105px;
     width: 317px;
   }
-  .button-transparente{
+  .opcao-adicionar-palavra{
     height: 67px;
     width: 293px;
   }
-
+  .opcao-jogar{
+    margin-bottom: 17px; 
+  }
 }
 
 @media screen and (min-width: 768px){
-  .menu-opcao{
+  .tela-inicial .menu-opcao{
     margin-top: 280px;
   }
 }
 
 @media screen and (min-width: 1400px){
-  .button-transparente{
+  .opcao-adicionar-palavra{
     background-color: #cbf4fc;
     color:#0A3871;
     height: 105px;
     width: 317px;
   }
-  .button-azul, .button-transparente{
+  .opcao-jogar, .opcao-adicionar-palavra{
     font-size: 1.25rem;
   }
 }

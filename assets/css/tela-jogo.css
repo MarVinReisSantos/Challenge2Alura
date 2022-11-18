@@ -1,46 +1,49 @@
 @import url("./components/botao.css");
 @media screen and (min-width: 0){
-  .container{
+  .tela-game{
     display: flex;
     flex-direction: column;
     margin: 80px 16px 0 16px;
   }
-  .button-azul, .button-transparente{
+  .tela-game .menu-opcao{
+    flex-direction: column;
+  }
+  .opcao-novo-jogo, .opcao-desisti{
     height: normal;
     width: 343px;
   }
-  
+  .opcao-novo-jogo{
+    margin-bottom: 17px; 
+  }
 }
 
-
 @media screen and (min-width: 768px){
-  .container{
+  .tela-game{
     margin: 0 40px 0 40px;
   }
-
-  .menu-opcao{
+  .tela-game .menu-opcao{
     flex-direction: row;
     justify-content: space-between;
   }
   .opcao-novo-jogo, .opcao-desisti{
-    max-width: 350px;
+    max-width: 400px;
     width: 45%;
   }
-  .button-azul{
+  .opcao-novo-jogo{
     margin-bottom: 0; 
   }
 }
 
 @media screen and (min-width: 1400px){
-  .container{
+  .tela-game{
     width: 50%;
     margin: 120px auto 0 auto; 
   }
-  .menu-opcao{
-    justify-content: flex-start;
+  .tela-game .menu-opcao{
+    justify-content: space-around;
   }
   .opcao-novo-jogo{
-    margin-right: 100px;
+    margin-right: 150px;
     
   }
   .cabecalho .logotipo-alura{

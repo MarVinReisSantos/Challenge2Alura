@@ -8,25 +8,61 @@
   <link rel="stylesheet" href="./assets/css/resert.css">
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/tela-inicial.css">
+  <link rel="stylesheet" href="./assets/css/tela-jogo.css">
+  <link rel="stylesheet" href="./assets/css/components/botao.css">
+  <link rel="stylesheet" href="./assets/css/tela-adiciona-palavra.css">
   <link rel="shortcut icon" href="./assets/img/logotipo.svg" type="image/x-icon">
 </head>
 <body>
   <header class="cabecalho">
-    <img src="./assets/img/logotipo.svg" alt="logotipo da alura" class="logotipo-alura">
+    <img src="./assets/img/logotipo.svg" alt="logotipo da alura" onclick="telaInicial()" class="logotipo-alura">
   </header>
   <main class="container">
-    <section >
+    <section class="tela-inicial">
       <nav class="menu-opcao">
-        <button class="opcao-jogar button button-azul">
-          <a href="./assets/telas/tela-jogo.html" class="opcao-jogar-link button-azul-link">Começar a jogar</a>
+        <button class="opcao-jogar button button-azul" onclick="jogar()">
+          Começar a jogar
         </button>
   
-        <button class="opcao-adicionar-palavra button button-transparente">
-          <a href="./assets/telas/adiciona-palavra.html" class="opcao-adicionar-palavra-link button-transparente-link">Adicionar nova palavra</a>
+        <button class="opcao-adicionar-palavra button button-transparente" onclick="adicionarPalavra()">
+          Adicionar nova palavra
         </button>
       </nav>
     </section>
     
+    <section class="tela-game">
+      <canvas id="forca" height="600px" width="1200px"></canvas>
+      <nav class="menu-opcao">
+        <button class="opcao-novo-jogo button button-azul" onclick="novoJogo()">
+          Novo jogo
+        </button>
+        <button class="opcao-desisti button button-transparente" onclick="desistir()">
+          Desistir
+        </button>
+      </nav>
+    </section>
+    
+    <section class="tela-adiciona-nova-palavra">
+      <textarea name="entrada-nova-palavra" class="entrada-nova-palavra" cols="30" rows="10" placeholder="Digite uma palavra ou frase"></textarea>
+      <div class="grupo-form">
+        <img src="./assets/img/!.svg" alt="exclamacao">
+        Máx. de 8 letras
+      </div>
+      <nav class="menu-opcao">
+        <button class="opcao-salvar-e-comecar button button-azul" onclick="salvarPalavraComecar()">
+          Salvar e começar
+        </button>
+        <button class="opcao-cancelar button button-transparente" onclick="desistir()">
+          Cancelar
+        </button>
+      </nav>
+    </section>
   </main>
+
+  <footer>
+    Desenvolvido por Marcos Vinicius.
+  </footer>
+  <script type="text/javascript" src="./assets/js/forca.js"></script>
+  <script type="text/javascript" src="./assets/js/controle-tela.js"></script>
 </body>
 </html>

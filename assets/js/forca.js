@@ -5,10 +5,16 @@ let palavraSecreta = "";
 let palavraDigitada = [];
 let letras = [];
 let erros = 8;
-
+function salvarPalavraComecar(){
+  let novaPalavra = document.querySelector('.entrada-nova-palavra').value.toUpperCase();
+  palavras.push(novaPalavra);
+  document.querySelector(".tela-game").style.display = "block"
+  document.querySelector(".tela-adiciona-nova-palavra").style.display = "none"
+  
+  novoJogo()
+}
 iniciarJogo()
 function iniciarJogo(){
-  // document.getElementById('div-desaparece').style.display = "none"
   escolherPalavraSecreta();
   desenharCanvas()
   desenharCanvas();
@@ -38,6 +44,14 @@ function iniciarJogo(){
         escreverVocePerdeu();
       }
     }
+}
+function novoJogo(){
+  palavraSecreta = "";
+  palavraDigitada = [];
+  letras = [];
+  erros = 8;
+
+  iniciarJogo();
 }
 function escolherPalavraSecreta(){
   let palavra = palavras[Math.floor(Math.random() * palavras.length)];
