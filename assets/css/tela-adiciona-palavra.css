@@ -1,0 +1,71 @@
+@import url("./components/botao.css");
+
+@media screen and (min-width: 0){
+  .container{
+    display: flex;
+    flex-direction: column;
+    margin: 80px 16px 0 16px;
+  }
+  .entrada-nova-palavra{
+    background: transparent;
+    border: none;
+    color: #0A3871;
+    font-size: normal;
+    font-size: 2rem;
+    outline: 0;
+    resize: none;
+    height: 300px;
+    width: 50%;
+  }
+  .grupo-form{
+    color: #495057;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    margin-bottom: 16px;
+  }
+  .button-azul, .button-transparente{
+    height: normal;
+    width: 343px;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .container{
+    margin: 80px 40px 0 40px;
+  }
+  .entrada-nova-palavra{
+    height: 450px;
+  }
+  .menu-opcao{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .opcao-salvar-e-comecar, .opcao-cancelar{
+    max-width: 350px;
+    width: 45%;
+  }
+  .button-azul{
+    margin-bottom: 0; 
+  }
+}
+
+@media screen and (min-width: 1400px){
+  .container{
+    width: 50%;
+    margin: 120px auto 0 auto;
+  }
+  .entrada-nova-palavra{
+    height: 400px;
+    width: 1000px;
+  }
+  .menu-opcao{
+    justify-content: flex-start;
+  }
+  .opcao-salvar-e-comecar{
+    margin-right: 100px;
+    
+  }
+}

@@ -1,0 +1,37 @@
+@import url("./components/botao.css");
+
+@media screen and (min-width: 0){
+  .container{
+    margin: 0 29px;  
+  }
+  .menu-opcao{
+    margin-top: 209px;
+  }
+  .button-azul{
+    height: 105px;
+    width: 317px;
+  }
+  .button-transparente{
+    height: 67px;
+    width: 293px;
+  }
+
+}
+
+@media screen and (min-width: 768px){
+  .menu-opcao{
+    margin-top: 280px;
+  }
+}
+
+@media screen and (min-width: 1400px){
+  .button-transparente{
+    background-color: #cbf4fc;
+    color:#0A3871;
+    height: 105px;
+    width: 317px;
+  }
+  .button-azul, .button-transparente{
+    font-size: 1.25rem;
+  }
+}

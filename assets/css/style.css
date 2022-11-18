@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@media screen and (min-width: 0){
+  body{
+    background-color: #cbf4fc;
+    font-family: 'Inter', sans-serif;
+  }
+  .cabecalho .logotipo-alura{
+    height: 48px;
+    padding-top: 24px;
+    padding-left: 16px;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .cabecalho .logotipo-alura{
+    padding-top: 74px;
+    padding-left: 40px;
+  }
+}
+
+@media screen and (min-width: 1400px){
+  .cabecalho .logotipo-alura{
+    padding-top: 40px;
+    padding-left: 84px;
+  }
+}
