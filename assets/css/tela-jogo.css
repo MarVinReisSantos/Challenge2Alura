@@ -3,14 +3,20 @@
   .tela-game{
     display: flex;
     flex-direction: column;
-    margin: 80px 16px 0 16px;
+    margin: 80px 10% 0 10%;
+  }
+  #forca{
+    max-width: 90%;
+    margin: 0 10% 0 10%;
   }
   .tela-game .menu-opcao{
     flex-direction: column;
+    max-width: 90%;
+    margin: 0 10% 0 10%;
   }
   .opcao-novo-jogo, .opcao-desisti{
     height: normal;
-    width: 343px;
+    width: 300px;
   }
   .opcao-novo-jogo{
     margin-bottom: 17px; 
