@@ -21,6 +21,15 @@
   .opcao-novo-jogo{
     margin-bottom: 17px; 
   }
+  .entrada-texto-celular{
+    text-align: center;
+  }
+  #forca-entrada-texto{
+    background-color: transparent;
+    border: none;
+    margin-bottom: 10px;
+    outline: 0;
+  }
 }
 
 @media screen and (min-width: 768px){
@@ -41,6 +50,9 @@
 }
 
 @media screen and (min-width: 1400px){
+  .entrada-texto-celular{
+    display: none;
+  }
   .tela-game{
     width: 50%;
     margin: 120px auto 0 auto; 

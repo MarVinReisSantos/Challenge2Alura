@@ -1,6 +1,7 @@
 //Seletores
 let palavras = ["ALURA", "ORACLE", "FORCA", "HTML", "JAVASCRIPT", "LOGICA"];
 let tabuleiro = document.getElementById("forca").getContext('2d');
+let entradaTextoMobile = document.getElementById('forca-entrada-texto');
 let palavraSecreta = "";
 let palavraDigitada = [];
 let letras = [];
@@ -20,6 +21,8 @@ function iniciarJogo(){
   desenharCanvas();
   desenharLinhas();
     document.onkeydown = (e) => {
+      entradaTextoMobile.value = "";
+
       let letra = e.key.toUpperCase();
   
       if(verificarLetra(letra) && palavraSecreta.includes(letra)){
@@ -46,6 +49,7 @@ function iniciarJogo(){
     }
 }
 function novoJogo(){
+  entradaTextoMobile.value = "";
   palavraSecreta = "";
   palavraDigitada = [];
   letras = [];
